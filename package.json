@@ -1,6 +1,6 @@
 {
   "name": "react-idle-enhanced",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "Notifies your app when the user is idle under multiple states.",
   "main": "lib/index.js",
   "module": "es/index.js",
