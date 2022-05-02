@@ -1,11 +1,11 @@
-# React Idle
+# Enhanced React Idle
 
 ![logo](./logo.png)
 
 What?
 -----
 
-Notifies your app when the user is idle.
+Notifies your app when the user is idle under multiple states.
 
 Why?
 ----
@@ -16,19 +16,19 @@ Installation
 ------------
 
 ```bash
-npm install react-idle
+npm install react-idle-enhanced
 # or
-yarn add react-idle
+yarn add react-idle-enhanced
 ```
 
 And then import it:
 
 ```js
 // using es modules
-import Idle from 'react-idle'
+import Idle from 'react-idle-enhanced'
 
 // common.js
-const Idle = require('react-idle').default
+const Idle = require('react-idle-enhanced').default
 
 // AMD
 // I've forgotten but it should work.
@@ -37,7 +37,7 @@ const Idle = require('react-idle').default
 Or use script tags and globals.
 
 ```html
-<script src="https://unpkg.com/react-idle"></script>
+<script src="https://unpkg.com/react-idle-enhanced"></script>
 ```
 
 And then grab it off the global like so:
@@ -51,7 +51,7 @@ How?
 ----
 
 ```render-babel
-// import { Idle } from 'react-idle'
+// import { Idle } from 'react-idle-enhanced'
 const { default: Idle } = ReactIdle
 
 ReactDOM.render((
@@ -77,7 +77,7 @@ Props
 Whatever you'd like to render in response to changes in user activity.
 
 ```render-babel
-// import { Idle } from 'react-idle'
+// import { Idle } from 'react-idle-enhanced'
 const { default: Idle } = ReactIdle
 
 ReactDOM.render((
@@ -97,7 +97,7 @@ ReactDOM.render((
 How long before notifying that the user is idle in milliseconds.
 
 ```render-babel
-// import { Idle } from 'react-idle'
+// import { Idle } from 'react-idle-enhanced'
 const { default: Idle } = ReactIdle
 
 ReactDOM.render((
@@ -120,7 +120,7 @@ ReactDOM.render((
 Called whenever the user's activity state changes, a great time to change the owner component's state, or to kick off some imperative work like pre-fetching code-split bundles or images.
 
 ```render-babel
-// import { Idle } from 'react-idle'
+// import { Idle } from 'react-idle-enhanced'
 const { default: Idle } = ReactIdle
 
 class App extends React.Component {
