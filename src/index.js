@@ -75,7 +75,6 @@ export default class Idle extends Component {
       for (let i = 0; i < this.props.states.length; i++) {
         this.stateTimers.push(
           setTimeout(() => {
-            debugger;
             this.handleChange(this.props.states[i].id);
           }, this.props.states[i].timeout)
         );
